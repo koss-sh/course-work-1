@@ -15,5 +15,11 @@ public class Main {
         methods.addEmployee("Клинтова Лариса Вильямовна", 1, 800000);
         methods.addEmployee("Меркелова Анжела Иосифовна", 5, 210000);
         methods.addEmployee("Макаронов Иммануил Соломонович", 3, 110000);
+        methods.getAllEmployees();
+        methods.countTotalSalary();
+        methods.findMinSalary();
+        methods.findMaxSalary();
+        methods.countAverageSalary();
+        methods.printAllEmployees();
     }
 }
