@@ -21,5 +21,12 @@ public class Main {
         methods.findMaxSalary();
         methods.countAverageSalary();
         methods.printAllEmployees();
+        employees[1].setSalary(55555);
+        employees[2].setDepartment(1);
+        methods.getAllEmployees();
+        methods.countTotalSalary();
+        methods.findMinSalary();
+        methods.findMaxSalary();
+        methods.countAverageSalary();
     }
 }

@@ -1,9 +1,9 @@
 package course_work_1;
 
 public class Employee {
-    public String name;
-    public int department;
-    public int salary;
+    private final String name;
+    private int department;
+    private int salary;
     public static int idCounter;
     private int id;
 
