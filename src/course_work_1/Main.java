@@ -4,29 +4,28 @@ public class Main {
     static Employee[] employees = new Employee[10];
 
     public static void main(String[] args) {
-        Methods methods = new Methods();
-        methods.addEmployee("Бадин Иван Иванович", 1, 2000000);
-        methods.addEmployee("Питун Вадим Вадимович", 2, 30000);
-        methods.addEmployee("Стаканенко Валентина Матвеевна", 3, 100000);
-        methods.addEmployee("Шульц Олег Рудольфович", 4, 150000);
-        methods.addEmployee("Жонсов Борис Борисович", 5, 1000000);
-        methods.addEmployee("Бульбашенко Александр Тарасович", 2, 50000);
-        methods.addEmployee("Соловьев Владимир Адольфович", 4, 100000);
-        methods.addEmployee("Клинтова Лариса Вильямовна", 1, 800000);
-        methods.addEmployee("Меркелова Анжела Иосифовна", 5, 210000);
-        methods.addEmployee("Макаронов Иммануил Соломонович", 3, 110000);
-        methods.getAllEmployees();
-        methods.countTotalSalary();
-        methods.findMinSalary();
-        methods.findMaxSalary();
-        methods.countAverageSalary();
-        methods.printAllEmployees();
+        Methods.addEmployee("Бадин Иван Иванович", 1, 2000000);
+        Methods.addEmployee("Питун Вадим Вадимович", 2, 30000);
+        Methods.addEmployee("Стаканенко Валентина Матвеевна", 3, 100000);
+        Methods.addEmployee("Шульц Олег Рудольфович", 4, 150000);
+        Methods.addEmployee("Жонсов Борис Борисович", 5, 1000000);
+        Methods.addEmployee("Бульбашенко Александр Тарасович", 2, 50000);
+        Methods.addEmployee("Соловьев Владимир Адольфович", 4, 100000);
+        Methods.addEmployee("Клинтова Лариса Вильямовна", 1, 800000);
+        Methods.addEmployee("Меркелова Анжела Иосифовна", 5, 210000);
+        Methods.addEmployee("Макаронов Иммануил Францевич", 3, 110000);
+        Methods.getAllEmployees();
+        Methods.countTotalSalary();
+        Methods.findMinSalary();
+        Methods.findMaxSalary();
+        Methods.countAverageSalary();
+        Methods.printAllEmployees();
         employees[1].setSalary(55555);
         employees[2].setDepartment(1);
-        methods.getAllEmployees();
-        methods.countTotalSalary();
-        methods.findMinSalary();
-        methods.findMaxSalary();
-        methods.countAverageSalary();
+        Methods.getAllEmployees();
+        Methods.countTotalSalary();
+        Methods.findMinSalary();
+        Methods.findMaxSalary();
+        Methods.countAverageSalary();
     }
 }
