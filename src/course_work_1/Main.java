@@ -27,5 +27,16 @@ public class Main {
         Methods.findMinSalary();
         Methods.findMaxSalary();
         Methods.countAverageSalary();
+
+        Methods.indexAllSalaries();
+        Methods.findDeptMinSalary(1);
+        Methods.findDeptMaxSalary(5);
+        Methods.countTotalDeptSalary(2);
+        Methods.countAverageDeptSalary(2);
+        Methods.indexAllDeptSalaries(5, 4.5);
+        Methods.findDeptMaxSalary(5);
+        Methods.printDeptAllEmployees(4);
+        Methods.printEmployeesLessThanSalary(500000);
+        Methods.printEmployeesMoreThanSalary(500000);
     }
 }

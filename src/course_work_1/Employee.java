@@ -3,15 +3,15 @@ package course_work_1;
 public class Employee {
     private final String name;
     private int department;
-    private int salary;
+    private double salary;
     public static int idCounter;
     private int id;
 
-    public Employee(String name, int department, int salary) {
+    public Employee(String name, int department, double salary) {
         this.name = name;
         this.department = department;
         this.salary = salary;
-        id = idCounter;
+        id = idCounter + 1;
     }
 
     public String getName() {
@@ -22,7 +22,7 @@ public class Employee {
         return department;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 
@@ -38,7 +38,7 @@ public class Employee {
         this.department = department;
     }
 
-    public void setSalary(int salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
