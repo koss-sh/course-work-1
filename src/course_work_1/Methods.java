@@ -48,7 +48,7 @@ public class Methods {
     }
 
     public static void countAverageSalary() {
-        double average = (double) countTotalSalary() / Employee.getIdCounter();
+        double average = countTotalSalary() / Employee.getIdCounter();
         System.out.println("Средняя зарплата: " + average);
     }
 
@@ -72,46 +72,44 @@ public class Methods {
             System.out.println("Такого отдела не существует");
             return;
         }
-        double minDeptSalary = 0;
-        Employee employeeMin = Main.employees[0];
         int i;
         for (i = 0; i < Employee.getIdCounter(); i++) {
             if (Main.employees[i].getDepartment() == department) {
-                minDeptSalary = Main.employees[i].getSalary();
-                employeeMin = Main.employees[i];
                 break;
             }
         }
+        double minDeptSalary = Main.employees[i].getSalary();
+        Employee employeeMin = Main.employees[i];
         for (int k = i++; k < Employee.getIdCounter(); k++) {
             if(Main.employees[k].getDepartment() == department && Main.employees[k].getSalary() < minDeptSalary) {
                 minDeptSalary = Main.employees[k].getSalary();
                 employeeMin = Main.employees[k];
             }
         }
-        System.out.println("Минимальная зарплата в отделе " + department + ": " + minDeptSalary + ", сотрудник: " + employeeMin.getName());
+        System.out.println("Минимальная зарплата в отделе " + department +
+                ": " + minDeptSalary + ", сотрудник: " + employeeMin.getName());
     }
     public static void findDeptMaxSalary(int department) {
         if (department < 0 || department > 5) {
             System.out.println("Такого отдела не существует");
             return;
         }
-        double maxDeptSalary = 0;
-        Employee employeeMax = Main.employees[0];
         int i;
         for (i = 0; i < Employee.getIdCounter(); i++) {
             if (Main.employees[i].getDepartment() == department) {
-                maxDeptSalary = Main.employees[i].getSalary();
-                employeeMax = Main.employees[i];
                 break;
             }
         }
+        double maxDeptSalary = Main.employees[i].getSalary();
+        Employee employeeMax = Main.employees[i];
         for (int k = i++; k < Employee.getIdCounter(); k++) {
             if(Main.employees[k].getDepartment() == department && Main.employees[k].getSalary() > maxDeptSalary) {
                 maxDeptSalary = Main.employees[k].getSalary();
                 employeeMax = Main.employees[k];
             }
         }
-        System.out.println("Максимальная зарплата в отделе " + department + ": " + maxDeptSalary + ", сотрудник: " + employeeMax.getName());
+        System.out.println("Максимальная зарплата в отделе " + department +
+                ": " + maxDeptSalary + ", сотрудник: " + employeeMax.getName());
     }
     public static void countTotalDeptSalary(int department) {
         if (department < 0 || department > 5) {
@@ -124,7 +122,8 @@ public class Methods {
                 sum += Main.employees[i].getSalary();
             }
         }
-        System.out.println("Сумма затрат на зарплаты в месяц по отделу " + department + " составляет: " + sum);
+        System.out.println("Сумма затрат на зарплаты в месяц по отделу " + department +
+                " составляет: " + sum);
     }
     public static void countAverageDeptSalary(int department) {
         if (department < 0 || department > 5) {
@@ -162,7 +161,8 @@ public class Methods {
         System.out.println("Список всех сотрудников отдела " + department + ":");
         for (int i = 0; i < Employee.getIdCounter(); i++) {
             if (Main.employees[i].getDepartment() == department) {
-                System.out.println("№" + Main.employees[i].getId() + ", " + Main.employees[i].getName() + ", " + Main.employees[i].getSalary());
+                System.out.println("№" + Main.employees[i].getId() + ", " + Main.employees[i].getName()
+                        + ", " + Main.employees[i].getSalary());
             }
         }
     }
@@ -170,7 +170,8 @@ public class Methods {
         System.out.println("Сотрудники с зарплатой ниже " + salary + ":");
         for (int i = 0; i < Employee.getIdCounter(); i++) {
             if (Main.employees[i].getSalary() < salary) {
-                System.out.println("№" + Main.employees[i].getId() + ", " + Main.employees[i].getName() + ", " + Main.employees[i].getSalary());
+                System.out.println("№" + Main.employees[i].getId() + ", " + Main.employees[i].getName()
+                        + ", " + Main.employees[i].getSalary());
             }
         }
     }
@@ -178,7 +179,8 @@ public class Methods {
         System.out.println("Сотрудники с зарплатой выше " + salary + ":");
         for (int i = 0; i < Employee.getIdCounter(); i++) {
             if (Main.employees[i].getSalary() > salary) {
-                System.out.println("№" + Main.employees[i].getId() + ", " + Main.employees[i].getName() + ", " + Main.employees[i].getSalary());
+                System.out.println("№" + Main.employees[i].getId() + ", " + Main.employees[i].getName()
+                        + ", " + Main.employees[i].getSalary());
             }
         }
     }

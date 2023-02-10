@@ -30,7 +30,7 @@ public class Main {
 
         Methods.indexAllSalaries();
         Methods.findDeptMinSalary(1);
-        Methods.findDeptMaxSalary(5);
+        Methods.findDeptMaxSalary(1);
         Methods.countTotalDeptSalary(2);
         Methods.countAverageDeptSalary(2);
         Methods.indexAllDeptSalaries(5, 4.5);
