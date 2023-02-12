@@ -11,7 +11,8 @@ public class Employee {
         this.name = name;
         this.department = department;
         this.salary = salary;
-        id = idCounter + 1;
+        idCounter ++;
+        id = idCounter;
     }
 
     public String getName() {
@@ -50,4 +51,3 @@ public class Employee {
                 ", зарплата: " + salary;
     }
 }
-

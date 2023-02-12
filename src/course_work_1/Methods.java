@@ -8,8 +8,8 @@ public class Methods {
             System.out.println("Нельзя добавить сотрудника. Лимит: 10 человек.");
         }
         Employee newEmployee = new Employee(name, department, salary);
-        Main.employees[Employee.getIdCounter()] = newEmployee;
-        Employee.idCounter++;
+        Main.employees[Employee.getIdCounter()-1] = newEmployee;
+       // Employee.idCounter++;
     }
 
     public static void getAllEmployees() {
