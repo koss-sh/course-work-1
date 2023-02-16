@@ -9,7 +9,6 @@ public class Methods {
         }
         Employee newEmployee = new Employee(name, department, salary);
         Main.employees[Employee.getIdCounter()-1] = newEmployee;
-       // Employee.idCounter++;
     }
 
     public static void getAllEmployees() {
@@ -33,7 +32,7 @@ public class Methods {
                 employeeMin = Main.employees[i];
             }
         }
-        System.out.println("С минимальной зарплатой: "+ employeeMin);
+        System.out.println("С минимальной зарплатой: " + employeeMin);
     }
     public static void findMaxSalary() {
         double maxSalary = Main.employees[0].getSalary();
@@ -44,7 +43,7 @@ public class Methods {
                 employeeMax = Main.employees[i];
             }
         }
-        System.out.println("С максимальной зарплатой: "+ employeeMax);
+        System.out.println("С максимальной зарплатой: " + employeeMax);
     }
 
     public static void countAverageSalary() {
