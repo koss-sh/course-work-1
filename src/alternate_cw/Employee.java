@@ -2,14 +2,14 @@ package alternate_cw;
 
 public class Employee {
 
-    private static int counterId = 1;
+    private static int counterId = 0;
     private final int id;
     private final String fullName;
     private int department;
     private  int salary;
 
     public Employee(String fullName, int department, int salary) {
-        this.id = counterId++;
+        this.id = ++counterId;
         this.fullName = fullName;
         this.department = department;
         this.salary = salary;
