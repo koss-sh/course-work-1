@@ -199,8 +199,8 @@ public class EmployeeBook {
                     result.append(employee).append("\n");
                 }
             }
-            if (!result.isEmpty()){
-
+            if (result.length() != 0) {
+                System.out.println("Сотрудники отдела " + department + "\n" + result);
             }
 
 
